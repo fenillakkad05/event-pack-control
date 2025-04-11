@@ -21,7 +21,7 @@ const LoginForm = () => {
     setIsPasswordVisible(!isPasswordVisible);
   };
 
-  const handleLogin = async (e: React.FormEvent) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
     if (!email || !password) {
       toast({
@@ -57,7 +57,7 @@ const LoginForm = () => {
     }
   };
 
-  const handleRegister = async (e: React.FormEvent) => {
+  const handleRegister = async (e) => {
     e.preventDefault();
     if (!registerEmail || !registerPassword || !registerConfirmPassword) {
       toast({

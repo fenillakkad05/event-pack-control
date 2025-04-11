@@ -1,12 +1,7 @@
 
 import React from "react";
 
-type LogoProps = {
-  className?: string;
-  size?: "sm" | "md" | "lg";
-};
-
-const Logo: React.FC<LogoProps> = ({ className = "", size = "md" }) => {
+const Logo = ({ className = "", size = "md" }) => {
   let sizeClasses = "h-10 w-auto";
   
   if (size === "sm") {
